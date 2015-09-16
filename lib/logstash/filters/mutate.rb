@@ -75,7 +75,7 @@ class LogStash::Filters::Mutate < LogStash::Filters::Base
   # [source,ruby]
   #     filter {
   #       mutate {
-  #         convert => { "fieldname" => "integer" }
+  #         convert => { "fieldname" , "integer" }
   #       }
   #     }
   config :convert, :validate => :hash
